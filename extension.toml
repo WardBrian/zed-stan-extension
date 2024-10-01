@@ -1,4 +1,4 @@
-id = "zed-stan-extension"
+id = "stan-extension"
 name = "Stan"
 version = "0.0.1"
 schema_version = 1
