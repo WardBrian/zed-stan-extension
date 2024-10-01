@@ -1,0 +1,12 @@
+id = "zed-stan-extension"
+name = "Stan"
+version = "0.0.1"
+schema_version = 1
+authors = ["Brian Ward <bward@flatironinstitute.org>"]
+description = "Stan language support, based on tree-sitter"
+repository = "https://github.com/wardbrian/zed-stan-extension"
+
+
+[grammars.stan]
+repository = "https://github.com/WardBrian/tree-sitter-stan"
+commit = "4b64a88c46ba9543d7621bc5a1affb5cf8b23ff0"
