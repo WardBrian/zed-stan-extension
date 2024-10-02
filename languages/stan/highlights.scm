@@ -1,11 +1,5 @@
-; these probably shouldn't be modules
-(functions "functions" @constructor)
-(data "data" @constructor)
-(transformed_data "transformed data" @constructor)
-(parameters "parameters" @constructor)
-(transformed_parameters "transformed parameters" @constructor)
-(model "model" @constructor)
-(generated_quantities "generated quantities" @constructor)
+(identifier) @variable
+
 
 (comment) @comment
 (string_literal) @string
@@ -95,6 +89,7 @@ name: (identifier) @function.call
     "vector"
     "simplex"
     "unit_vector"
+    "sum_to_zero_vector"
     "ordered"
     "positive_ordered"
     "row_vector"
@@ -106,6 +101,8 @@ name: (identifier) @function.call
     "cov_matrix"
     "cholesky_factor_cov"
     "cholesky_factor_corr"
+    "column_stochastic_matrix"
+    "row_stochastic_matrix"
     "void"
 ]@type
 
@@ -140,6 +137,8 @@ name: (identifier) @function.call
 
 (profile_statement "profile" @keyword)
 
+(target_statement "target" @keyword "+=" @keyword)
+(jacobian_statement "jacobian" @keyword "+=" @keyword)
 
 (for_statement
 loopvar: (identifier) @variable.parameter
@@ -148,4 +147,10 @@ loopvar: (identifier) @variable.parameter
 parameter: (identifier) @variable.parameter
 )
 
-(identifier) @variable
+(functions "functions" @constructor)
+(data "data" @constructor)
+(transformed_data "transformed data" @constructor)
+(parameters "parameters" @constructor)
+(transformed_parameters "transformed parameters" @constructor)
+(model "model" @constructor)
+(generated_quantities "generated quantities" @constructor)

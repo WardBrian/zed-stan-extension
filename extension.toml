@@ -1,4 +1,4 @@
-id = "stan-extension"
+id = "stan"
 name = "Stan"
 version = "0.0.1"
 schema_version = 1
@@ -9,4 +9,4 @@ repository = "https://github.com/wardbrian/zed-stan-extension"
 
 [grammars.stan]
 repository = "https://github.com/WardBrian/tree-sitter-stan"
-commit = "4b64a88c46ba9543d7621bc5a1affb5cf8b23ff0"
+commit = "3f79872fa8ab9aa533c99f40ed6f26abae3c1a78"
