@@ -1,12 +1,15 @@
 id = "stan"
 name = "Stan"
-version = "0.0.1"
+version = "1.0.0"
 schema_version = 1
 authors = ["Brian Ward <bward@flatironinstitute.org>"]
-description = "Stan language support, based on tree-sitter"
+description = "Stan language support"
 repository = "https://github.com/wardbrian/zed-stan-extension"
-
 
 [grammars.stan]
 repository = "https://github.com/WardBrian/tree-sitter-stan"
 commit = "3f79872fa8ab9aa533c99f40ed6f26abae3c1a78"
+
+[language_servers.stan-language-server]
+name = "stan-language-server"
+languages = ["Stan"]
