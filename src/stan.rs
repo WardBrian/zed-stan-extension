@@ -86,7 +86,6 @@ impl StanExtension {
 
 impl zed::Extension for StanExtension {
     fn new() -> Self {
-        println!("[STAN EXTENSION] Hello, world!");
         StanExtension {
             cached_binary_path: None,
         }
