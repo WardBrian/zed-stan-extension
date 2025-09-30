@@ -1,0 +1,12 @@
+[package]
+name = "zed-stan-extension"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+path = "src/stan.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.7.0"
+
