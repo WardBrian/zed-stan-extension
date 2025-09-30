@@ -8,7 +8,7 @@ repository = "https://github.com/wardbrian/zed-stan-extension"
 
 [grammars.stan]
 repository = "https://github.com/WardBrian/tree-sitter-stan"
-commit = "3f79872fa8ab9aa533c99f40ed6f26abae3c1a78"
+commit = "2c305f312a4c478c5c4bb0dea6922a646ca3c759"
 
 [language_servers.stan-language-server]
 name = "stan-language-server"
