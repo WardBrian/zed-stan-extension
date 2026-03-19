@@ -1,6 +1,6 @@
 id = "stan"
 name = "Stan"
-version = "1.0.0"
+version = "1.1.0"
 schema_version = 1
 authors = ["Brian Ward <bward@flatironinstitute.org>"]
 description = "Stan language support"
@@ -8,8 +8,15 @@ repository = "https://github.com/wardbrian/zed-stan-extension"
 
 [grammars.stan]
 repository = "https://github.com/WardBrian/tree-sitter-stan"
-commit = "2c305f312a4c478c5c4bb0dea6922a646ca3c759"
+commit = "110b2e9296645046019602aac361b18dbd492f7d"
+path = "grammars/stan"
+
+
+[grammars.stanfunctions]
+repository = "https://github.com/WardBrian/tree-sitter-stan"
+commit = "110b2e9296645046019602aac361b18dbd492f7d"
+path = "grammars/stanfunctions"
 
 [language_servers.stan-language-server]
 name = "stan-language-server"
-languages = ["Stan"]
+languages = ["Stan", "Stan Functions"]

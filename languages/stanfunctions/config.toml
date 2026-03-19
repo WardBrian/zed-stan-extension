@@ -1,0 +1,4 @@
+name = "Stan Functions"
+grammar = "stanfunctions"
+path_suffixes = ["stanfunctions"]
+line_comments = ["// "]
