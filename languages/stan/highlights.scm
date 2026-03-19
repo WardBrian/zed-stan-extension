@@ -87,7 +87,6 @@ name: (identifier) @function.call
     "array"
     "tuple"
     "vector"
-; BEGIN_STAN_ONLY
     "simplex"
     "unit_vector"
     "sum_to_zero_vector"
@@ -105,7 +104,6 @@ name: (identifier) @function.call
     "column_stochastic_matrix"
     "row_stochastic_matrix"
     "sum_to_zero_matrix"
-; END_STAN_ONLY
     "void"
 ]@type
 
@@ -125,14 +123,12 @@ name: (identifier) @function.call
     "return"
 ] @keyword.control
 
-; BEGIN_STAN_ONLY
 [
     "lower"
     "upper"
     "offset"
     "multiplier"
 ] @property
-; END_STAN_ONLY
 
 (preproc_include
     directive: "#include" @keyword
@@ -152,13 +148,10 @@ loopvar: (identifier) @variable.parameter
 parameter: (identifier) @variable.parameter
 )
 
-; BEGIN_STAN_ONLY
-; these probably shouldn't be modules
-(functions "functions" @module)
-(data "data" @module)
-(transformed_data "transformed data" @module)
-(parameters "parameters" @module)
-(transformed_parameters "transformed parameters" @module)
-(model "model" @module)
-(generated_quantities "generated quantities" @module)
-; END_STAN_ONLY
+(functions "functions" @constructor)
+(data "data" @constructor)
+(transformed_data "transformed data" @constructor)
+(parameters "parameters" @constructor)
+(transformed_parameters "transformed parameters" @constructor)
+(model "model" @constructor)
+(generated_quantities "generated quantities" @constructor)
